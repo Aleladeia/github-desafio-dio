@@ -1,0 +1,110 @@
+sha1 = Algoritmo desenvolvido pela agencia nacional americana
+
+pega todo um conteudo e encripta em um conjunto de 40 caracteres
+
+para verificar fazer o seguinte teste
+
+abrir o git bash em algum diretório com um um documento de texto.txt por exemplo
+
+rodar o seguinte comando openssl sha1 texto.txt, ele gera uma string de 40 caractere, se um caractere for alterado e vc rodar o comando -> openssl sha1 texto.txt, novamente, uma nova string de 40 caracteres será gerada, e se você 
+reverter a mudança que tinha feito e rodar o comando novamente, ele te retorna a primeira string de 40 caracteres gerada antes da mudança
+
+
+OBJETOS DO GIT
+	Blobs
+		Abaixo exemplo de encriptação utilizando a função hash-object 		
+	 	do git, é o mesmo sha1 porem dentro de um objeto do git que é 		
+		o blob que possui metadados dentro de si
+		
+		echo 'conteudo' | git hash-object --stdin
+		fc31e91b26cf85a55e072476de7f263c89260eb1
+
+		echo -e 'blob 9\0conteudo' | openssl sha1
+		fc31e91b26cf85a55e072476de7f263c89260eb1
+		Para gerar o mesmo hash sem utilizar objeto do git
+		deve ser passado os parametros acima, -e 'blob 9\0 "texto"'
+
+		$ echo -e 'conteudo' | openssl sha1
+		(stdin)= 65b0d0dda479cc03cce59528e28961e498155f5c
+
+
+	Trees
+
+		Trees armazena os blobs, responsavel por montar a estrutura
+		e onde estão localizados estes arquivos, apontando para as 		
+		bolhas (blobs) ou outras arvores
+
+	Commits
+
+		Commit objeto que junta tudo, aponta pra uma arvore e para o 		
+		ultimo commit realizado antes dele
+
+		eles também possuem o SHA1
+
+		então se um dado dentro de uma blob é alterado se o blob tem 		
+		uma arvore apontando pra ele e essa ravore tem um commit 		
+		apontando pra ela, toda a estrutura sofrerá alteração gerando 		
+		um novo código HASH que é o que torna o git/github seguro
+
+
+=============================================================================
+
+
+CHAVE SSH E TOKEN
+
+	em agosto de 2021 houve alterações na autenticação para subir um 	
+	projeto pro github, não se usa mais apenas nick e senha
+
+	porém da forma existente agora com o SSH a chave identifica como se 	
+	fosse uma assinatura da maquina
+
+	explicado o processo de gerar a SSH e ativar no github para detectar 		
+	a maquina como "confiavel", ja tenho o conteudo anotado em outro 	
+	arquivo no caminho abaixo
+
+	C:\Users\Alexandre José\Documents\ALEXANDRE\PROGRAMAÇÃO	\aulagit\GIT E GITHUB.txt
+
+
+	comandos git bash:
+	CAT: imprimi na tela o conteudo do arquivo
+
+	PWD: exibe o caminho completo do diretório onde estamos
+
+	eval $(ssh-agent -s) = inicia o processo em segundo plado
+
+TOKEN DE ACESSO PESSOAL
+	Developer setings -  > Personal acess tokens
+	marcar opção Repo
+	gerar o token e salvar em algum lugar seguro
+
+	para clonar com o Token usar o  HTTPS com o comando
+	git clone link_https disponibilizado no git
+
+	ele detecta que ta sendo usado o token e abre uma nova janela
+	pedindo pra informar o token e assim liberar a clonagem do 	repositório
+
+PRIMEIROS COMANDOS COM GIT
+
+Git init 
+   Pra criar um repositório git no seu projeto
+
+Tracked:Git tem ciencia desses arquivos, os que não sofreram mudanças, que sofreram e os que estão se preparando para fazer parte do commit
+
+Untracked: Arquivos que o git não tem ciencia sobre eles 
+
+Staged: Arquivos que estão aguardando o commit para ser adicionado ao nosso repositório git se tornando tracked
+
+Comandos para definir o proprietario do projeto
+   Git config --global user.email "email_aqui" 
+   Git config --global user.name "seu nome de usuário"
+
+UTILIZAMOS O MARKDOWN COMO EXEMPLO PARA DIDATICA DO CURSO COM TYPORA
+
+Git add = move o arquivo untracket para Staged, passando o mesmo para tracked
+
+Git commit -m = pega todos os arquivos que estão como Staged e junta os mesmos em uma unica snapshot (versão) e volta para o estagio de unmodified
+
+flag -a mostra arquivos ocultos no terminal
+
+exemplo ls -a
+
