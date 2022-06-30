@@ -1,0 +1,19 @@
+Tags para textos
+
+<h1> //Titulo da pagina
+<h2> //Titulo de seção
+<h3> //Titulo de artigo
+<p> //Conteúdo do artigo, utilizado para textos maiores e mais densos, representa um paragrafo, podemos adicionar outros conteudos além de texto, como imagens e videos
+
+"Tags essenciais para indicar a nós visualmente a importancia de localização de sessões de texto na pagina"
+
+Tags para Links
+
+<a> //representa uma ancora, interliga varios conteudo na web, tem varios atributos mas vamos utilizar o href e o target por enquanto
+
+href //é o hyperlink pra onde a nossa ancora está apontando, pagina do nosso site ou site externo, ele pode apontar para emails e telefones, porém deve-se usar um prefixo sendo estes o mailto: (para emails) e o tel: (para telefones).
+
+target //serve pra indicar como nosso link vai ser aberto, por enquanto vamos aprende o _blank, que diz a nossa pagina para abrir o link em uma nova aba
+
+EXERCICIO PRATICO
+Adicionar um texto a nossa postagem e um link dentro do texto

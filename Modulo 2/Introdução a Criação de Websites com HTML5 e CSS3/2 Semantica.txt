@@ -1,0 +1,18 @@
+Semantica Parte1
+
+Antes o elemento padrão do HTML era a DIV o conteudo era feito todo usando <div> virando uma bagunça, no html5 foram criados novos elementos que trouxeram significado ao HTML
+
+<section> //seção generica de conteudo como uma lista de artigos
+<header> // cabeçalho da pagina ou de parte dela, pode ser o cabeçalho de uma section
+<article> //representa conteudo relevante dentro da pagina, como um artigo de um blog
+<aside> //representa conteudo relacionado ao conteudo principal, representado na pagina por uma barra na lateral
+<footer> // rodapé da pagina ou de parte da pagina, como um article ou uma section
+<h1>-<h6> // não criado na versão html5, porem são importantes para semantica, importantes para um titulo da pagina, porém por pagina só pode existir 1 <h1>
+
+Semantica Parte 2
+Exercicio adicionar as tags novas a nossa pagina.
+
+Aplicado as novas tags na pagina onde começamos primeiramente colocando um cabeçalho(<header>) para pagina com <h1> dentro do nosso <body>(lembrando que é o unico h1 que pode ter nesta pagina).
+Após isso criamos uma <section>, demos um cabeçalho pra ela e definimos seu nome como Posts com <h2>. 
+Dentro da <section> ainda criamos um <article> demos ao mesmo um cabeçalho com o titulo de Post #1 utilizando o <h3>, finalizando por enquanto nossa </section>(com a "/" para fechar o elemento).
+Abaixo da section adicionamos um rodapé(<footer>) onde colocaremos depois nossas informações de contato.

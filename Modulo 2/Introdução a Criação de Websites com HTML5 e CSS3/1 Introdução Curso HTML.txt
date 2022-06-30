@@ -1,0 +1,33 @@
+Como é um elemento HTML?
+
+ele é a base do HTML, tudo dentro dele é um elemento, o mesmo começa com uma tag de abertura, como por exemplo
+
+<h1 class="titulo">Título</h1>
+
+primeio foi aberto a tag <h1>, nela foi passado um atributo no caso o class="titulo", após a tag passamos o conteudo, no caso Título, e por fim fechamos a tag com o </h1>, tudo isso forma 1 ELEMENTO HTML.
+
+===================================================
+
+Estrutura Básica
+
+<!DOCTYPE html> //não é um elemento, apenas diz ao navegador o que estamos escrevendo.
+<html> //tag do elemento html, todo nosso conteudo fica dentro deste elemento
+<head> // apos elemento html, iniciamos o head e dentro dele teremos meta informações, informações que o navegador necessita
+<meta> //tag muito utilizada dentro do elemento head, pode ser usada pra varias coisas por exemplo "Charset" que é como o navegador vai fazer o encode dos caracteres
+<title> onde informamos o titulo que vai aparecer na aba do navegador
+<body> // onde fica o conteudo da nossa pagina, elemento inserido após fechar a tag head, depois fechamos o body e depois o HTML, ficando da seguinte forma abaixo
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta>
+  <title></title>
+ </head>
+ <body>
+ </body>
+</html> 
+
+====================================================
+exercicio
+
+criaremos um site pessoal, vamos criar apenas a estrutura basica

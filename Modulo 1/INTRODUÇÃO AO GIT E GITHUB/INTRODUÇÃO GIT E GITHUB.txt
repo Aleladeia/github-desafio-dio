@@ -1,0 +1,54 @@
+CLI = Command Line Interface
+
+GUI = Graphic User Interface
+
+MUDAR DE PASTA
+LISTAR PASTA
+CRIAR PASTAS/ARQUIVOS
+DELETAR PASTAS/ARQUIVOS
+
+comandos basicos no terminal
+Para Windows: VEM DO SHELL
+	-CD = significa Change Directory, possibilita navegar entre as pastas
+	para acessar uma pasta basta digitar CD nome_pasta e para voltar um nivel
+	usar o CD ..
+
+	-CLS = Clear Screen, limpa o terminal
+
+	-DIR = lista os diretorios disponiveis na pasta na qual estamos situados
+
+	-MKDIR = cria uma pasta (criar uma pasta workspace)
+
+	-ECHO = retorna o que é escrito, o simbolo de maior > que é redirecionador de fluxo
+	comando faz o seguinte por exemplo. echo hello > hello.txt, neste caso ele verifica
+	se dentro da pasta onde estamos existe algum arquivo com o nome hello.txt, se após dar
+	enter e o DOS não trouxer a mensagem Hello é pq não existe o arquivo hello.txt neste
+	diretório 
+
+	-DEL = para deletar arquivos usar o comando del nome_pasta
+
+	RMDIR =	remove directory, deleta a pasta e os arquivos, comando é rmdir nome_pasta
+	usou as flags /S e /Q = ??? ´\O/`
+
+Atalhos
+	tecla TAB = autocomplete
+
+Para Linux/Unix/MACOS: VEM DO BASH
+	-CD = o mesmo do windows
+
+	-CLEAR = também limpa o terminal (pode usar o atalho ctrl+L tbm)
+
+	-LS = lista os diretorios disponiveis na pasta na qual estamos situados
+
+	-ECHO = o mesmo do windows
+
+	-MKDIR = cria uma pasta porém precisa de permissão de super usuário no linux no 
+	casa SUDO SU
+
+	-RM = comando para deletar a pasta, usado junto as flags -rf, r de recursivo
+	que no caso o comando se aplica a todas as outras pastas que podem estar ali
+	dentro e f de force para não pedir nenhuma confirmação e etc
+
+todos estes comandos possuem variancias/flags que são complementos que passamos
+aos comandos que acrescentam modificam ou formatam a forma que os comandos são devolvidos 
+pra nós.
