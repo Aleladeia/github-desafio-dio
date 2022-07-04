@@ -1,0 +1,12 @@
+elemento <img> //não possui tag de fechamento exemplo </img>
+
+possui dois atributos apenas o src que é obrigatório e o alt
+
+SRC = guarda o caminho da imagem
+ALT = melhora a acessibilidade, mostra a descrição da foto quando ela não é carregada
+
+Exercicio Prático
+	Adicionar uma imagem ao cabeçalho da pagina e a postagem
+
+
+DICA: Após selecionar imagens jogar as mesmas no site tinypng.com, para remover meta informações nos dando otimização

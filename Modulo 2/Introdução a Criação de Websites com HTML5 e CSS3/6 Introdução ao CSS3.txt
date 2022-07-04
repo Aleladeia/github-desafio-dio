@@ -1,0 +1,30 @@
+Objetivos
+
+1 O que são seletores? Elementos HTML
+
+2 Conceitos basicos
+
+3 Principais seletores
+
+Definição
+é uma linguagem de estilo, onde vc cria regras de estilo para elementos ou conjunto de elementos, por exemplo.
+
+a, p, h1, h3 {
+  color: blue;
+  font-size: 14px;
+}
+
+esse é um elemento CSS, nele o que está fora das chaves é chamado de seletores, já dentro das chaves temos as declarações (elas são formadas por uma propriedade e o valor desta propriedade), são elas que vão aplicar o estilo aos seletores definidos, neste caso a cor dos elementos vai ser azul e o tamanho da fonte do texto será de 14px.
+
+ID e Classes, podem representar qualquer tipo de elemento, no exemplo utilizado com os elementos HTML, conhecido como seletor de tipo, toda vez que um destes elementos for chamado ele vai trazer as mesmas caracteristica de estilo, para diferenciar isso que utilizamos os IDs e Classes
+
+Diferenças entre ID E CLASSE:
+No Css uma classe é representada por .nomeclasse
+ja o ID é representado por #nomeid
+um ID só ser usado uma vez por pagina.
+
+TAG LINK
+   essa tag diz ao navegador o tipo de arquivo que está sendo adicionado, passamos o parametro rel="stylesheet" e href para informar o nome do arquivo de onde vai ser puxado as configurações
+
+
+

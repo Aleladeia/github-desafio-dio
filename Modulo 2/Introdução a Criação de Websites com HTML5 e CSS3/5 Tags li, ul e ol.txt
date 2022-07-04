@@ -1,0 +1,10 @@
+Listas = servem para agrupar coleção de itens
+
+<ul> //ordem dos itens não é importante
+
+<ol> //ordem importante, representados com numeros, letras, e algarismos romanos
+
+<li> //é um item da lista
+
+Exercicio Pratico
+    Adicionar lista de contatos ao rodapé do site.

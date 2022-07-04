@@ -1,0 +1,11 @@
+
+O navegador representa cada elemento  HTML com uma caixa retangular
+conhecida como BOX MODEL. Com o CSS conseguimos alterar sua aparencia
+a mesma é dividida em 4 areas
+
+Margin //são espaçamentos entre os elementos
+Border // circundam o padding e conteudo, conseguimos alteras sua aparencia
+Padding //espaçamento entre Border e Content
+Content //o que o nosso bloco representa (texto, imagem e etc)
+
+Exercicio: adionar cores e bordas a alguns elementos, para enxergarmos o box model
