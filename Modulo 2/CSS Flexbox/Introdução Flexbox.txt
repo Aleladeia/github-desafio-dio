@@ -1,0 +1,26 @@
+Aprenderemos a criar layouts responsivos, sem necesidade de definir valores fixos, serão apresentados os fundamentos e aplicações da propriedade flexbox o objetivo vai ser termos a capacidade de criar sites que se adequem as mais variadas resoluções de dispositivos 
+
+Aula 1 - Introdução Flexbox
+Aula 2 - Fundamentos do flexbox 
+Aula 3 - Projeto integrados
+
+=============================================================================
+Projeto integrador
+Objetivo do projeto é consolidar o nosso conhecimento, vamos fazer uma landingpage
+
+==============================================================================
+
+Modelo de layout unidimensional
+
+Flex container, tag que envolve os itens, possui itens filhos, a propriedade passada a tag é o "display:flex", uma vez inicializado todos os itens filhos são tranformados em flex itens, essa inicialização de container pode ser feita em qual tag(<div>, <span>, <h1> e etc...)
+
+Propriedades relacionadas.
+display = inicializador do container
+flex-direction = faz o direcionamento dos itens em linha, coluna...
+flex-wrap = aplicar a quebra de linha
+flex-flow = abreviação do direction e wrap
+justify-content = alinha os itens do container de acordo com sua direção
+align-items = alinha os itens de acordo com sei eixo
+align-content = alinha as linhas do container.
+
+Flex-item = itens filhos diretos do flex container

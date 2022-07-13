@@ -1,0 +1,27 @@
+primeira propriedade DISPLAYFLEX
+Objetivo conhecer e aplicar a propriedade de inicialização do flex container 
+
+Ao tornarmos uma tag display:flex todas as outras tags dentro deste elemento container serão
+transformadas em flex-items.
+
+faz com que cada item ocupe o maximo do seu conteudo e se abrigue dentro do container 
+respeitando a orientação em linha, essas propriedades são comuns em aplicações mobile
+utilizando estes elementos no menu, para que a aplicação se adapte as telas
+
+========================================================================================
+propriedade flex direction
+
+propriedade que estabelece eixos dentro do container, linha e coluna, porem é o eixo principal
+que vai definir o comportamento dos nossos items
+
+são 2 eixos linha = horizontal e coluna = vertical, vamos trabalhar as posições reversas destes
+items.
+
+row: direção do texto, da esquerda para direita
+row-reverse: sintido oposto a direção do texto
+
+column: eixo vertical de coluna, ordenação de cima  pra baixo
+column-reverse: ordenação inversa, de baixo pra cima
+
+seu comportamento padrão é na horizontal, vamos aprender a modificar esta orientação
+

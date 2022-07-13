@@ -1,0 +1,16 @@
+Importante para os layouts
+
+Width = ajuste de largura 
+Height = ajuste de altura
+//pode ser usado px ou %, porém a porcentagem se refere de acordo com o elemento que //vem de fora dele
+
+Max-width = largura maxima que o elemento pode ter
+Max-height = altura maxixa que o elemento pode ter
+//se ajusta de acordo com a situação
+
+Margin = espaçamento entre elementos, tem o valor auto caso queiramos que ele alinhe automaticamente
+
+text align = serve para alinhar textos.
+
+Exercicio:
+delimitar dimensões e alinhar conteudo

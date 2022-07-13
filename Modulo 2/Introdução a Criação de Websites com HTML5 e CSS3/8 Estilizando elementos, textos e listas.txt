@@ -1,0 +1,186 @@
+Paddin e Marging
+
+No módulo anterior utilizamos o padding de forma mais simples
+no caso apenas com 1 valor exemplo: 
+
+utilizando da forma abaixo o tamanho vai ser aplica a todas as direções, acima, direita, abaixo e esquerda
+.post {
+   padding: 10px;
+}
+
+Desta outra forma o primeiro valor de 15px se aplica ao eixo Y (acima e abaixo)e o valor 10px ao eixo X (esquerda e direta) 
+.post {
+   padding: 15px 10px;
+}
+
+Neste outro exemplo, cada valor se aplica a uma direção, começando sempre acima e seguindo o sentido horário, direita, abaixo e esquerda
+.post {
+   padding: 15px 10px 5px 0; com o valor 0 não precisa definir unidade
+}
+
+A ultima forma é usando as propriedades especificas pra cada lado, mais utilizado quando 3 lados são iguais e apenas 1 é diferente.
+Exemplo
+.post {
+   padding: 15px;	
+   padding-right: 10px;
+}
+
+Abaixo modelo com todas as propriedades existentes 
+.post {
+   padding-top: 15px;	
+   padding-right: 10px;
+   padding-bottom: 5px;
+   padding-left: 0;
+}
+
+=======INDICAÇÃO DE LUGAR BOM PARA ESTUDAR=======
+	Site da mozila developer network 
+	conhecido como MDN
+
+Formas de usar o Background 
+.post {
+   background-color: green;
+   background-image: url("nome ou caminho da imagem");
+   background-position:  top; //altera o posicionamento de algum 
+			      //elemento (imagem, texto e etc)
+}
+
+Formas de usar o Background para cor
+.post {
+   background-color: green;   //exemplo com nome da cor em inglês
+   background-color: #008800; //com valor da cor hexadecimal
+   backgroud: #008000; 	      //com apenas a propriedade background, sem o 
+       	 	       	      //color e usando o código hexadecimal ou nome
+}
+
+Border
+Possui
+Largura: pixels, centimetros, milimetros, metros...
+Cor: nome da cor em inglês, ou código hexadecimal...
+Estilo: solida, pontilhada, tracejada... 
+
+Abaixo o exemplo de border com 3 variações de propriedades e parâmetros passados. 
+.post {
+   border: 3px solid blue;	  //O primeiro apenas o border normal que vai se aplicar a esquerda e abaixo essas propriedades borda de largura 3px, solida e na cor azul.
+   border-top: 2px dotted green;  //Neste caso como explicado no padding podemos definir a borda do topo de outra forma com largura de 2px, pontilhada e na cor verde.
+   border-right: 4px dashed pink; //Por fim o lado que sobrou, lado direito com borda com 4px de largula, tracejada na cor rosa.
+}
+
+Alternativas para o border
+abaixo utilizando as propriedades especificas 
+.post {
+   border-width: 3px; //largura
+   border-color: #505050; //cor
+   border-style: solid; //estilo
+}
+
+Com lado e aspectos de uma borda, no caso como exemplo foi usado o topo
+.post {
+   border-top-width: 3px; //largura
+   border-top-color: blue; //cor
+   border-top-style: solid; //estilo
+}
+
+Border-radius = para arredondar os cantos, segue a mesma lógica do padding, utiliza as unidades de medida px ou %.
+
+EXERCICIO: Deixando o site mais bonito.
+
+foi criado algumas classes novas para estilizarmos no CSS, adicionar margens e bordas
+
+=====================================================================================
+Estilizando textos
+
+fodemos utilizar o font-family para alterar a fonte do nosso texto, por enquanto vamos usar algumas web safe fonts(são fontes que tem na maioria dos dispositivos)
+
+exemplos adicionando fontes
+
+#title {
+  font-family: Verdana;
+}
+
+.post_title{
+  font-family: Verdana, Arial; //Neste caso temos duas fontes pois se uma falhar
+ 			       //temos a segunda fonte como um backup.
+}
+
+Configurações de tamanho com font-size
+#title {
+  font-size: 30px;
+}
+
+.post_title {
+  font-size: 30px; //OBS: podem ser utilizados outras unidades além do PX.
+}
+
+Configurações de tipo com font-style
+#title {
+  font-style: normal;
+}
+
+.subtitle {
+  font-style: italic; //verificar se a fonte tem suporte para o italico, pois se não tiver o navegador vai forçar o italico e pode não ficar muito bom.
+
+Configurações de peso com font-weight
+#title {
+  font-weight: normal;
+}
+
+.subtitle {
+  font-weight: bold; //para fontes mais comuns apenas normal e bold ja resolve porém
+ 		     //para fontes que possuem mais pesos como light usado para
+ 		     //fontes mais complexas
+}
+
+
+text-transform //coloca as letras em maisculas ou minusculas com uppercase e lowercase
+#title {
+  text-transform: uppercase;
+}
+
+.subtitle {
+  text-transform: lowercase;
+}
+
+.post_title {
+  text-transform: capitalize; //primeiras letras de cada palavra ficam maiusculas
+}
+
+text-decoration //usado para destacar algum texto
+text-decoration: underline; //linha abaixo do texto
+text-decoration: overline; //linha acima do texto
+text-decoration: line-through; //linha no meio do texto, cortando as palavras
+
+EXERCICIO: 
+alterar fonte e aparencia dos textos
+
+
+====================================================================================
+Estilizando Listas
+
+Sabemos que as tags de lista são ul para lista não ordenada e ol para lista ordenada
+podemos estilizar estas listas também passando algumas propriedades, abaixo segue algumas.
+
+list-style-type //para modificar os marcadores, exemplos:
+
+ul {
+  list-style-type: square; //altera o marcador para um simbulo de quadrado
+}
+
+ol {
+  list-style-type: upper-roman; //coloca algarismos romanos maisculos como marcadores
+}
+
+ul {
+  list-style-type: "\1F44D"; //código referente ao emoji de joinha
+}
+
+Podemos adicionar imagens tambem como marcadores da nossa lista
+utilizando a propriedade list-style-image
+exemplo:
+
+ul {
+  list-style-image: url("imagem.png") //pode ser o nome da imagem se a mesma estiver 				      //no mesmo diretório do CSS, senão deve-se 				      //passar o caminho do local da imagem
+}
+
+Exercicio:
+foi aplicado os novos comandos aprendidos na aula, estilizamos a lista.
