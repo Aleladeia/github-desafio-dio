@@ -18,10 +18,36 @@ são 2 eixos linha = horizontal e coluna = vertical, vamos trabalhar as posiçõ
 items.
 
 row: direção do texto, da esquerda para direita
-row-reverse: sintido oposto a direção do texto
+row-reverse: sentido oposto a direção do texto
 
 column: eixo vertical de coluna, ordenação de cima  pra baixo
 column-reverse: ordenação inversa, de baixo pra cima
 
 seu comportamento padrão é na horizontal, vamos aprender a modificar esta orientação
+
+========================================================================================
+flex-wrap
+
+Propriedade a qual define de os itens (flex-item) se devem ou não quebrar a linha, por padrão
+o mesmo não faz a quebra de linha, quando não usado, os items são compactados no container
+até o limite do conteudo, em determinado momento o limite não será o suficiente fazendo com
+que o items passem dos limites do container
+
+PROPRIEDADES
+A propriedade para esse efeito de não quebrar a linha é o nowrap
+Já com o uso do wrap é possivel fazer as quebras assim que um flex item não puder mais ser 
+compactado
+Além deles temos o wrap-reverse, qua assim como o wrap realiza a quebra de linha quando um
+item não pode mais ser compactado, porém esta quebra de linha é feita para cima.
+
+===============================================================================
+flex-flow
+
+O flew flow é um atalho para as propriedades flex-direction e flex-wrap, com ela
+é possivel comprimir a escrita, em vez de usar uma linha pra cada propriedade
+conseguimos utilizar apenas 1 linha com o flex-flow,
+
+não é muito utilizada
+
+
 
