@@ -49,5 +49,33 @@ conseguimos utilizar apenas 1 linha com o flex-flow,
 
 não é muito utilizada
 
+==================================================================================
+Justify-Content
 
+propriedade resposavel por alinhar os itens dentro do container de acordo  com 
+a direção pretendida e tratar o espaçamento entre eles
 
+Obs: se os itens ocupam 100% do espaço do container essa proprieda não se aplica
+pois não a sobras de espaços
+
+VARIAÇÔES
+flex-start: inicio do container
+flex-end: final do container
+center: ao centro do container
+space-between: cria espaçãmento igual entre os elementos
+space-around: espaçamentos do meio ficam 2x maiores que o inicial e final
+
+==================================================================================
+Align-itens
+
+trata do alinhamento dos itens de acordo com eixo do container, o alinhamento é diferente
+quando os itens estão em linha ou colunas
+
+faz o alinhamento central no eixo vertical, tenta pegar a proporcionalidade do elemento
+
+TIPOS:
+center: alinha os itens ao centro
+stretch: padrão, faz com que os itens mantenham a proporção
+flex-start: alinhamento dos itens no inicio
+flex-end: alinhamento dos itens no final
+baseline: alinha de acordo com linha base da tipografia dos itens
