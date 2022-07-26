@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class = "container stretch">
+        <div class="item">Troxa, longe o bostante pra não afetar os demais</div>
+        <div class="item">Xavante, com este cuidado temos, morte eminente</div>
+        <div class="item">Monkey comeu  banana achou que era banana, mas caiu nas tramanhas do biriba, fico doidão teve que voltar</div>
+        <div class="item">Cuia, senhor mamado</div>
+        <div class="item">Abacaxi, docim</div>
+        <div class="item">Bebê adulto, arubuebebe</div>
+        <div class="item">300 fala 300, o leonidas ai ja fica dificil né</div>
+    </div>
+
+    <p>center</p>
+    <div class = "container center">
+        <div class="item">Troxa, longe o bostante pra não afetar os demais</div>
+        <div class="item">Xavante, com este cuidado temos, morte eminente</div>
+        <div class="item">Monkey comeu  banana achou que era banana, mas caiu nas tramanhas do biriba, fico doidão teve que voltar</div>
+        <div class="item">Cuia, senhor mamado</div>
+        <div class="item">Abacaxi, docim</div>
+        <div class="item">Bebê adulto, arubuebebe</div>
+        <div class="item">300 fala 300, o leonidas ai ja fica dificil né</div>
+    </div>
+    
+    <p>flex-start</p>
+    <div class = "container flex-start">
+        <div class="item">Troxa, longe o bostante pra não afetar os demais</div>
+        <div class="item">Xavante, com este cuidado temos, morte eminente</div>
+        <div class="item">Monkey caiu nas tramanhas do biriba</div>
+        <div class="item">Cuia, senhor mamado</div>
+        <div class="item">Abacaxi, docim</div>
+        <div class="item">Bebê adulto, arubuebebe</div>
+        <div class="item">300 fala 300, o leonidas ai</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class = "container flex-end">
+        <div class="item">Troxa, longe o bostante pra não afetar os demais</div>
+        <div class="item">Xavante, com este cuidado temos, morte eminente</div>
+        <div class="item">Monkey caiu nas tramanhas do biriba, fico doidão teve que voltar</div>
+        <div class="item">Cuia, senhor mamado</div>
+        <div class="item">Abacaxi, docim</div>
+        <div class="item">Bebê adulto, arubuebebe</div>
+        <div class="item">300 fala 300, o leonidas ai</div>
+    </div>
+
+    <p>space-around</p>
+    <div class = "container space-around">
+        <div class="item">Troxa, longe o bostante pra não afetar os demais</div>
+        <div class="item">Xavante, com este cuidado temos, morte eminente</div>
+        <div class="item">Monkey caiu nas tramanhas do biriba, fico doidão teve que voltar</div>
+        <div class="item">Cuia, senhor mamado</div>
+        <div class="item">Abacaxi, docim</div>
+        <div class="item">Bebê adulto, arubuebebe</div>
+        <div class="item">300 fala 300, o leonidas ai</div>
+    </div>
+
+    <p>space-between</p>
+    <div class = "container space-between">
+        <div class="item">Troxa, longe o bostante pra não afetar os demais</div>
+        <div class="item">Xavante, com este cuidado temos, morte eminente</div>
+        <div class="item">Monkey caiu nas tramanhas do biriba, fico doidão teve que voltar</div>
+        <div class="item">Cuia, senhor mamado</div>
+        <div class="item">Abacaxi, docim</div>
+        <div class="item">Bebê adulto, arubuebebe</div>
+        <div class="item">300 fala 300, o leonidas ai</div>
+    </div>
+</body>
+</html>

@@ -79,3 +79,20 @@ stretch: padrão, faz com que os itens mantenham a proporção
 flex-start: alinhamento dos itens no inicio
 flex-end: alinhamento dos itens no final
 baseline: alinha de acordo com linha base da tipografia dos itens
+==================================================================================
+
+Align-content
+
+responsavel por tratar do alinhamento das linhas do container em relação ao eixo vertical
+do mesmo, trabalhando a orientação das linhas nos dando uma dica.
+
+o container precisa respeitar algumas orientações utilizar quebre de linha com flex-wrap
+no modo wrap e a latura do container deve ser maior que a soma das linhas dos itens
+
+TIPOS:
+center: alinha os itens ao centro
+stretch: padrão, faz com que os itens mantenham a proporção
+flex-start: alinhamento dos itens no inicio
+flex-end: alinhamento dos itens no final
+space-between: cria espaçãmento igual entre os elementos
+space-around: espaçamentos do meio ficam 2x maiores que o inicial e final

@@ -1,0 +1,7 @@
+Propriades de tratamento dos FLEX ITENS
+
+FLEX GROW
+Define a proporcionalidade de crescimento dos itens, sempre respeitando o 
+tamanho dos conteudos internos.
+
+Não funciona se o container utilizar o justify-content
