@@ -1,7 +1,24 @@
 Propriades de tratamento dos FLEX ITENS
 
-FLEX GROW
+FLEX-GROW
 Define a proporcionalidade de crescimento dos itens, sempre respeitando o 
 tamanho dos conteudos internos.
 
 Não funciona se o container utilizar o justify-content
+
+FLEX-BASIS
+Propriedade que estabelece o tamanho inicial do item antes de distribuir
+os espaços restantes dentro dele.
+
+Valores usados
+auto: caso não tenha um tamanho definido, ele vai ser proporcional ao 
+conteudo, mas se o flex-grow for definido ele vai adaptar o tamanho minimo
+sendo sempre igual
+
+px, %, em: esse valor define o tamanho minimo que o item vai ter
+
+0: relação direta com a definição do flex-grow
+
+FLEX-SHRINK
+Estabele a capacidade de redução ou compressão do  tamanho de um item
+funciona de forma inversa ao flex-basis.
