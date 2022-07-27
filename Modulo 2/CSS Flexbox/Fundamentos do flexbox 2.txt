@@ -22,3 +22,25 @@ px, %, em: esse valor define o tamanho minimo que o item vai ter
 FLEX-SHRINK
 Estabele a capacidade de redução ou compressão do  tamanho de um item
 funciona de forma inversa ao flex-basis.
+
+FLEX
+
+atalho ou abreviação para a escrita das propriedades GROW, SHRINK e BASIS
+exemplo: flex: 1 0 auto, isso significa que.
+GROW = 1. SHRINK = 0 e BASIS = auto.
+
+ORDER
+
+Propriedade que lida com a ordenação dos itens.
+
+ALIGN SELF
+
+estabelece alinhamento individual sobre determinado item.
+
+Valores:
+ Auto: Valor padão respeita o que for definido no align-items do container
+ flex-start: no inicio do container
+ flex-end: ao fim do container
+ center: ao centro de acordo com o eixo
+ stretch: ocupa todo o espaço disponivel
+ baseline: utiliza a linha base da tipografia
